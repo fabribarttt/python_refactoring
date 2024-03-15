@@ -7,13 +7,13 @@ while True:
   
     def option_one():
         while True:
-            print( 'Please enter the rating from 1 to 5' )
+            print( 'Please input the rating from 1 to 5' )
             point = input()
             if point.isdecimal():
                 point = int(point)
                 if  point <= 0 or point > 5: # Conditional expression that it is less than 0 or greater than 5
-                    print( 'Please enter from 1 to 5.' )
-                    point = input()
+                    print( 'Please input the rating from 1 to 5.' )
+                    point = str(input())
                 else:
                     print( 'Please enter your comment.' )
                     comment = input()
